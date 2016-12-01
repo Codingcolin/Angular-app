@@ -13,8 +13,8 @@
 </head>
 <body>
 	<div ng-controller="mainCtrl">
-		<div class="col-xs-12">
-			<ul class="list-group col-md-4" ng-repeat="p in people" ng-hide="p.active">
+		<div class="col-xs-12 main-container">
+			<ul class="list-group col-md-3" ng-repeat="p in people" ng-hide="p.active">
 			  <li class="list-group-item main-li">
 			  	<div class="col-xs-12">
 			  		<div class="col-xs-6">
@@ -24,7 +24,7 @@
 					  	<p>{{p.lat}}</p>
 					  	<p>{{p.lng}}</p>
 			  		</div>
-			  		<div class="col-xs-6">
+			  		<div class="col-xs-6 profile-img">
 			  			<img class="img-responsive" ng-src="{{p.photo_url}}">
 			  		</div>
 			  	</div>
